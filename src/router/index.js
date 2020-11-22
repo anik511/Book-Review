@@ -1,6 +1,6 @@
 
-import Reviews from '../components//views/Reviews';
-import Login from '../components/views/Login';
+import Reviews from '../views/Reviews';
+import Login from '../views/Login';
 export const routes = [
     {
         path: '',
