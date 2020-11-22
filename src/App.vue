@@ -2,7 +2,7 @@
   <div id="app">
     <Navbar/>
     <!-- <Reviews v-if="status"></Reviews> -->
-    <router-view :status="status"></router-view>
+    <router-view ></router-view>
   </div>
 </template>
 
@@ -19,9 +19,7 @@ export default {
     Navbar,
   },
   data() {
-    return {
-      status: true
-    };
+    return {};
   },
   methods:{
   }

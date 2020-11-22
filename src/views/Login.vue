@@ -30,10 +30,12 @@
               />
             </div>
             <div class="d-flex justify-content-center mt-3 login_container">
-              <button type="submit" name="button" class="btn login_btn"
-              >
+              <button type="submit" name="button" class="btn login_btn mr-2">
                 Login
               </button>
+              <router-link tag="div" :to="{ path: '/registration'}">
+                <button type="button" class="btn btn-outline-dark">Registration</button>
+              </router-link>
             </div>
           </form>
         </div>
@@ -69,7 +71,7 @@ export default {
     return {
       username: null,
       password: null,
-      status: this.$route.params.status
+      status: true
     };
   },
   methods: {
