@@ -20,5 +20,5 @@ npm run build --report
 
 For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
 # Book-Review
-1.Bookserver folder is api server
-2.axios is also added here now
+>Bookserver folder is api server.
+>axios is also added here now.
