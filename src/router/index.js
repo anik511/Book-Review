@@ -3,6 +3,7 @@ import Reviews from '../views/Reviews';
 import Login from '../views/Login';
 import Registration from '../views/Registration';
 import Dashbord from '../views/Dashbord';
+import ReviewDetails from '../views/ReviewDetails';
 export const routes = [
     {
         path: '',
@@ -19,5 +20,9 @@ export const routes = [
     {
         path:'/dashbord',
         component: Dashbord
+    },
+    {
+        path: '/review/:id',
+        component: ReviewDetails
     }
 ]

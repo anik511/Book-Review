@@ -1,8 +1,10 @@
 <template>
   <div id="app">
-    <Navbar/>
+    <Navbar />
     <!-- <Reviews v-if="status"></Reviews> -->
-    <router-view ></router-view>
+    <div class="container">
+      <router-view></router-view>
+    </div>
   </div>
 </template>
 
@@ -10,6 +12,7 @@
 // import Login from "./components/views/Login";
 // import Reviews from './components/views/Reviews'
 import Navbar from "./components/Navbar";
+// import Card from "./components/Card"
 
 export default {
   name: "App",
@@ -21,9 +24,7 @@ export default {
   data() {
     return {};
   },
-  methods:{
-  }
-
+  methods: {},
 };
 </script>
 

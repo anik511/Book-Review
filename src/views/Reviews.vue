@@ -1,12 +1,17 @@
 <template>
   <div>
-    <h1>{{msg}}</h1>
-    
+    <Card/>
   </div>
 </template>
 
 <script>
+import Card from "../components/Card";
 export default {
+  components: {
+    // Reviews,
+    // Login,
+    Card,
+  },
   data() {
     return {
       msg: 'Review Page',

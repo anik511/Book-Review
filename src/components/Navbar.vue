@@ -1,22 +1,6 @@
 <template>
   <div>
     <!--menu-->
-    <!-- <nav
-        class="navbar navbar-expand-lg navbar-light fixed-top bg-light navbar- col-lg-12 col-12 col-sm-12 container-fluid">
-        <div class="col-4 col-lg-4 col-sm-4">
-            <a class="navbar-brand" href="Category.php">LoGo</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#manue">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-        </div>
-
-        <div class="collapse navbar-collapse col-8 col-lg-8 col-sm-8" id="manue">
-
-            
-        </div>
-    </nav> -->
-    <!--end menu-->
-
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <router-link class="navbar-brand" :to="{ path: '/' }">
         Book Review</router-link
@@ -39,7 +23,7 @@
             <form @submit.prevent="search" class="form-inline mt-2">
               <input
                 v-model="keyword"
-                class="form-control "
+                class="form-control"
                 type="search"
                 placeholder="Search"
                 aria-label="Search"
@@ -53,12 +37,7 @@
             </form>
           </li>
           <li class="nav-item dropdown">
-            <a
-              class="nav-link menu-text"
-              
-              id="navbarDropdown"
-              role="button"
-            >
+            <a class="nav-link menu-text" id="navbarDropdown" role="button">
               <i class="far fa-list-alt fa-lg"></i> Categories
             </a>
             <div class="dropdown-menu">
@@ -69,7 +48,8 @@
             </div>
           </li>
           <li class="nav-item dropdown">
-            <router-link :to="{path:'/'}"
+            <router-link
+              :to="{ path: '/' }"
               class="nav-link menu-text"
               id="navbarDropdown"
               role="button"
@@ -78,16 +58,13 @@
             </router-link>
           </li>
           <li class="nav-item dropdown">
-            <a
-              class="nav-link menu-text"
-              id="navbarDropdown"
-              role="button"
-            >
+            <a class="nav-link menu-text" id="navbarDropdown" role="button">
               <i class="far fa-user fa-lg"></i>profile
             </a>
           </li>
           <li class="nav-item dropdown">
-            <router-link :to="{path:'/dashbord'}"
+            <router-link
+              :to="{ path: '/dashbord' }"
               class="nav-link menu-text"
               id="navbarDropdown"
               role="button"
@@ -95,9 +72,11 @@
               <i class="far fa-list-alt fa-lg"></i>
               Dashbord
             </router-link>
+          </li>
 
           <li class="nav-item dropdown">
-            <router-link :to="{path:'/login/'}"
+            <router-link
+              :to="{ path: '/login/' }"
               class="nav-link menu-text"
               id="navbarDropdown"
               role="button"
@@ -116,7 +95,7 @@
 export default {
   data() {
     return {
-      keyword: "",
+      keyword: '',
     };
   },
 

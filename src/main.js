@@ -3,6 +3,7 @@
 import Vue from 'vue'
 import App from './App'
 
+
 // adding Bootstrap & Jquery
 window.$ = window.jQuery = require('jquery')
 import 'bootstrap'
@@ -21,6 +22,6 @@ const router = new VueRouter({
 new Vue({
   el: '#app',
   router,
-  components: { App },
+  components: { App},
   template: '<App/>'
 })
